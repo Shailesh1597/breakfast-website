@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Breakfast Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Custom styles for mobile view */
+        @media (max-width: 767px) {
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                /* Adjust this value as needed */
+                font-size: 1rem;
+                /* Adjust font size for mobile */
+                margin: 0 auto;
+                /* Centers the button */
+                margin-bottom: 15px;
+            }
+        }
+
+        .custom-card {
+            background-color: black;
+            color: white;
+            border: 2px solid yellow;
+        }
+
+        .custom-card .btn-primary {
+            background-color: yellow;
+            border-color: yellow;
+        }
+        footer {
+    background-color: #343a40; /* Dark background */
+}
+
+footer .nav-link {
+    color: #ffffff; /* White text */
+}
+
+footer .btn-outline-light {
+    color: #ffffff; /* White text color for social icons */
+    border-color: #ffffff; /* White border color */
+}
+
+footer .btn-outline-light:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #343a40; /* Dark text color on hover */
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">OFFERS</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="./images/logo.png" alt="Logo" width="60" height="45"
+                        class="d-inline-block align-text-top">
+                </a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content with Background Image -->
+    <div class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-image: url('./images/background.png'); background-size: cover; background-position: center; height: 665px;">
+        <div class="row text-white w-100 py-5">
+            <div class="col-md-6 order-2 order-md-1 text-center text-md-start">
+                <img src="./images/background content.png" alt="Image description" class="img-fluid mt-3">
+            </div>
+
+            <div
+                class="col-md-6 order-1 order-md-2 text-center text-md-start d-flex flex-column justify-content-center">
+                <h1 class="BRE" style="color: yellow; margin-top: 0;">CONTACT US FOR<br> BEST BREAKFAST</h1>
+                <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem in pariatur, similique
+                    est quia neque
+                    voluptas nostrum adipisci ipsam iste soluta necessitatibus dolore totam, enim laborum cupiditate?
+                    Deleniti, voluptatum perferendis.</p>
+                <button type="button" class="btn btn-warning mt-3 mt-md-4" style="width: 200px;"><strong>Contact
+                        Us</strong></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-image: url('./images/enjoye.png'); background-size: cover; background-position: center; height: 665px;">
+        <div class="row text-white py-5 justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card custom-card mb-3">
+                    <div class="card-body p-5">
+                        <h5 class="card-title text-center">Enjoy Our Food</h5>
+                        <p class="card-text">At Sunrise Breakfast Bistro, we invite you to savor the finest breakfast
+                            experience in town. Our menu is designed to cater to all tastes and preferences, ensuring
+                            that every visit is a delightful culinary journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-image: url('./images/black-bg.png'); background-size: cover; background-position: center; height: 665px;">
+        <div class="row w-100">
+            <!-- Image Column -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="./images/About us.png" alt="About Us Image" class="img-fluid"
+                    style="width: 500px; border-radius: 20px;">
+            </div>
+            <!-- Content Column -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1 class="text-white">About Us</h1>
+                    <h3 class="text-white">Welcome to Sunrise Breakfast Bistro!</h3>
+                    <p class="text-white">At Sunrise Breakfast Bistro, we believe that breakfast is the most important
+                        meal of the day and deserves to be celebrated. Our mission is to offer you a delightful start to
+                        your day with a menu crafted from the finest ingredients and served with a smile.
+                    </p>
+                    <h5 class="text-white">Our Story</h5>
+                    <p class="text-white">Founded in 2024, Sunrise Breakfast Bistro started with a simple vision: to
+                        create a welcoming place where people could enjoy a hearty, delicious breakfast made from
+                        locally-sourced, fresh ingredients. From our family to yours, we pour our passion into every
+                        dish we serve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-image: url('./images/black-bg.png'); background-size: cover; background-position: center; height: 665px;">
+
+        <div class="container my-5">
+            <h2 class="text-center text-white mb-5">Our Delicious Menu</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card" style="background-color: black;  ">
+                        <img src="./images/menu3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: orange;"><strong> SOURCE MUSHROOM</strong></h5>
+                            <p class="card-text text-white">Lorem ipsum dolor sit amet consecte
+                                perspiciatis.Lorem
+                                perspiciatis.<br><span class="sd" style="color: orange;">Price $12</span></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="background-color: black; ">
+                        <img src="./images/menu2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: orange;"><strong> SOURCE MUSHROOM</strong></h5>
+                            <p class="card-text text-white">Lorem ipsum dolor sit amet consecte
+                                perspiciatis.Lorem
+                                perspiciatis.<br><span class="sd" style="color: orange;">Price $12</span></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="background-color: black; ">
+                        <img src="./images/menu1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: orange;"><strong> SOURCE MUSHROOM</strong></h5>
+                            <p class="card-text text-white">Lorem ipsum dolor sit amet consecte
+                                perspiciatis.Lorem
+                                perspiciatis.<br><span class="sd" style="color: orange;">Price $12</span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid d-flex align-items-center justify-content-center"
+        style="background-image: url('./images/yellow-bg.png'); background-size: cover; background-position: center; height: 665px;">
+        <div class="row w-100">
+            <!-- Image Column -->
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="./images/footer.png" alt="About Us Image" class="img-fluid"
+                    style="width: 500px; border-radius: 20px;">
+            </div>
+            <!-- Content Column -->
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1 class="text-white">Enjoy the Meal!</h1>
+                    <h3 class="text-white">Welcome to Sunrise Breakfast Bistro!</h3>
+                    <p class="text-white">At Sunrise Breakfast Bistro, we believe that breakfast is the most important
+                        meal of the day and deserves to be celebrated. Our mission is to offer you a delightful start to
+                        your day with a menu crafted from the finest ingredients and served with a smile.
+                    </p>
+
+                    <p class="text-white">Founded in 2024, Sunrise Breakfast Bistro started with a simple vision: to
+                        create a welcoming place where people could enjoy a hearty, delicious breakfast made from
+                        locally-sourced, fresh ingredients. From our family to yours, we pour our passion into every
+                        dish we serve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <div class="d-flex justify-content-center w-100">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="Logo" width="60" height="45" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <ul class="nav justify-content-center    mb-3">
+            <li class="nav-item"><a href="#" class="nav-link text-white">HOME</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">ABOUT</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">SERVICE</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">FOODS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white">CONTACT</a></li>
+        </ul>
+    
+        <!-- Social Media Icons -->
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-light me-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light me-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light me-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
